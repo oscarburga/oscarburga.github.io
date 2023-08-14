@@ -1084,7 +1084,7 @@ a:hover, a:active {
     bottom: 0;
     padding: 12px 16px;
     width: 100%;
-    background-color: #323131;
+    background-color: #323131F0;
     color: #fff;
     z-index: 11;
 }
@@ -1095,8 +1095,8 @@ a:hover, a:active {
 }
 
 .grid-item .img-caption p::before {
-    content: "\2014";
-    margin-right: 5px;
+    content: "";
+    margin-right: 0px;
 }
 
 @media (min-width: 768px) {
