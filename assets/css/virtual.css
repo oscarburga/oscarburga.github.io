@@ -462,6 +462,7 @@ a:hover, a:active {
 .progress-wrapper {
     display: block;
     margin: 10px 0;
+    padding-bottom: 2px;
 }
 
 .progress-wrapper .caption {
@@ -1428,4 +1429,76 @@ a:hover, a:active {
 
 .profile-description {
     text-align:justify;
+}
+
+.sep15 {
+    padding-bottom: 15px;
+}
+
+.sep20 {
+    padding-bottom: 20px;
+}
+
+.centered {
+    margin: auto;
+    width: 100%;
+}
+
+.page-client {
+  background-color: #171925;
+  color: #fff;
+}
+
+.page-client .row .item {
+  padding: 10px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #292e3b;
+}
+
+.page-client .row:last-child .item {
+  border-bottom: 0;
+}
+
+.page-client .row .item:first-child {
+  border-left: 0;
+}
+
+.page-client .row .item:last-child {
+  border-right: 0;
+}
+
+.page-client .img-place {
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.page-client .img-place:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.page-client .img-place img {
+  filter: grayscale(100%) brightness(2);
+  width: 40px;
+  height: 40px;
+  object-fit: fill;
+}
+
+.page-client .img-place:hover img {
+  filter: none;
+}
+
+.fillflex {
+    flex: 1;
+}
+
+.setcflex {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }

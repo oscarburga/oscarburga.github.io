@@ -324,54 +324,6 @@
   overflow: hidden;
 }
 
-
-.page-client {
-  background-color: #171925;
-  color: #fff;
-}
-
-.page-client .row .item {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-width: 0 1px 1px 1px;
-  border-style: solid;
-  border-color: #292e3b;
-}
-
-.page-client .row:last-child .item {
-  border-bottom: 0;
-}
-
-.page-client .row .item:first-child {
-  border-left: 0;
-}
-
-.page-client .row .item:last-child {
-  border-right: 0;
-}
-
-.page-client .img-place {
-  width: 100px;
-  height: 100px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.page-client .img-place:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.page-client .img-place img {
-  filter: grayscale(100%) brightness(2);
-}
-
-.page-client .img-place:hover img {
-  filter: none;
-}
-
-
 .page-blog {
   background-color: #fff;
 }
