@@ -1452,27 +1452,14 @@ a:hover, a:active {
 .page-client .row .item {
   padding: 10px;
   border-width: 0px;
-  border-style: solid;
-  border-color: #292e3b;
-}
-
-.page-client .row:last-child .item {
-  border-bottom: 0;
-}
-
-.page-client .row .item:first-child {
-  border-left: 0;
-}
-
-.page-client .row .item:last-child {
-  border-right: 0;
 }
 
 .page-client .img-place {
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: auto;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  overflow:visible;
 }
 
 .page-client .img-place:hover {
@@ -1485,11 +1472,46 @@ a:hover, a:active {
   filter: grayscale(100%) brightness(2);
   width: 40px;
   height: 40px;
-  object-fit: fill;
+  /* object-fit: fill;*/
+  position: relative;
+  display: inline-block;
 }
 
 .page-client .img-place:hover img {
   filter: none;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: auto;
+  height: fit-content;
+  background-color: #000000A0;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  border-width: 10px;
+  border-color:white;
+  padding: 4px;
+  z-index: 1;
+  position: absolute;
+  left: calc(-178px / 2);
+  bottom: 100%;
+}
+
+@media (max-width: 400px) {
+    .tooltiptext {
+        left: calc(-150px);
+    }
+}
+
+/*
+.page-client .img-place:hover .tooltiptext {
+    visibility: visible;
+}
+*/
+
+.page-client .img-place input:checked+span{
+    visibility: visible;
 }
 
 .fillflex {
