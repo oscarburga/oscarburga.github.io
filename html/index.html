@@ -80,7 +80,7 @@
   </div>
   
   <div class="vg-main-wrapper">
-    <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/bg_image_2.jpg);">
+    <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/bg_image_2_gs.jpg);">
       <div class="caption wow zoomInUp">
         <h1 class="fw-normal">Welcome</h1>
         <h2 class="fw-medium fg-theme">I'm Oscar Burga</h2>
@@ -106,11 +106,17 @@
                 I consider myself to be a fun, laid-back, yet disciplined person who's passionate about technology and computer science. 
                 Algorithms, problem-solving and optimizations are the core components that keep me enjoying my profession.
               </p>
+              <p class = "profile-description">
+                So far, I've mostly grown as a systems and network developer during my game development career, and I'm currently looking forward to learn more about 
+                console-specific development.
+              </p>
               <ul class="theme-list">
                 <li class="fg-dark"><b>From:</b> Lima, Peru.</li>
                 <li class="fg-dark"><b>Lives In:</b> Lima, Peru.</li>
                 <li class="fg-dark"><b>Age:</b> 22 years old.</li>
-                <li class="fg-dark"><b>Topics of Interest:</b> Systems development, networking, concurrency, computer graphics, Linux, embedded development.</li>
+                <li class="fg-dark"><b>Topics of Interest:
+                  </b> Systems development, networking, concurrency, computer graphics, optimizations, Linux, embedded development, computer architecture, low-level programming.
+                </li>
               </ul>
               <!--
               <a href="../assets/pdf/OscarBurga_GameDev.pdf" download="OscarBurga_GameDev.pdf">
@@ -297,17 +303,16 @@
                   </p>
                   <ul class="simlistg">
                     <li>
-                      Systems and gameplay programmer for the game Avatar: The Last Airbender: Quest for Balance. 
+                      Systems and gameplay programmer for the game <a href="#ala">Avatar: The Last Airbender: Quest for Balance.</a>
                     </li>
                     <li>
-                      Contributed to the development of the online system used across multiple projects.
+                      Network programmer for the game <a href="#dwr">DreamWorks All-Star Kart Racers.</a>
                     </li>
                     <li>
-                      Currently in charge of implementing online features and network gameplay mechanics for the game 
-                      DreamWorks All-Star Kart Racers. 
+                      Contributed to the development of the online system used across multiple projects, including <a href="#nkr3">Nickelodeon Kart Racers 3</a>.
                     </li>
                     <li>
-                      Developed automation tools to ease and optimize the art team's workflow in Unreal Engine.
+                      Developed editor tools and scripts for the team's artists in Unreal Engine 4.
                     </li>
                   </ul>
                 </div>
@@ -355,9 +360,9 @@
         </div>
 
         <div class="gridder my-3">
-          <div class="grid-item bamtang wow zoomIn">
+          <div class="grid-item bamtang wow zoomIn" id="ala">
             <a data-fancybox href="https://youtu.be/1WsMzwqnqgc" data-caption="">
-              <div class="img-place" data-src="../assets/img/work/atlaqb.jpg"> <!--data-fancybox data-caption="<h5 class='fg-theme'>Test</h5> <p>Caption</p>"> -->
+              <div class="img-place">
                 <img src="../assets/img/work/atlaqb.jpg" alt="">
                 <div class="img-caption">
                   <h5 class="fg-theme">Avatar: The Last Airbender: Quest for Balance</h5>
@@ -366,20 +371,31 @@
               </div>
             </a>
           </div>
-          <div class="grid-item bamtang wow zoomIn">
+          <div class="grid-item bamtang wow zoomIn" id="dwr">
             <a href="https://www.linkedin.com/posts/bamtang_dreamworksallstar-kartracing-comingsoon-activity-7090065523324919808-fXcV" target="_blank">
-              <div class="img-place" data-src="../assets/img/work/dreamworks.jpg"> <!--data-fancybox data-caption="<h5 class='fg-theme'>Test</h5> <p>Caption</p>"> -->
+              <div class="img-place">
                 <img src="../assets/img/work/dreamworks.jpg" alt="">
                 <div class="img-caption">
-                  <h5 class="fg-theme">Dreamworks All-Star Kart Racing</h5>
-                  <p>Kart-racing game featuring characters from various Dreamworks IPs.</p>
+                  <h5 class="fg-theme">DreamWorks All-Star Kart Racing</h5>
+                  <p>Kart-racing game featuring characters from various DreamWorks IPs.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item bamtang wow zoomIn" id="nkr3">
+            <a href="https://nickkartracers.com/" target="_blank">
+              <div class="img-place"> 
+                <img src="../assets/img/work/nkr3.jpg" alt="">
+                <div class="img-caption">
+                  <h5 class="fg-theme">Nickelodeon Kart Racers 3: Slime Speedway</h5>
+                  <p>Kart-racing game featuring characters from various Nickelodeon IPs.</p>
                 </div>
               </div>
             </a>
           </div>
           <div class="grid-item personal wow zoomIn">
             <a data-fancybox href="https://youtu.be/nm5r3BoKbo4" target="_blank" data-caption= '<h5 class="fg-theme"><a href="https://github.com/oscarburga/MrMime2" target="_blank">Click here to see the GitHub repository for the project</a></h5>'>
-              <div class="img-place" data-src="../assets/img/work/MrMime2.jpg">
+              <div class="img-place">
                 <img src="../assets/img/work/MrMime2.jpg" alt="">
                 <div class="img-caption">
                   <h5 class="fg-theme">MrMime2</h5>
@@ -390,7 +406,7 @@
           </div>
           <div class="grid-item articles wow zoomIn">
             <a href="https://cp-algorithms.com/geometry/halfplane-intersection.html" target="_blank">
-              <div class="img-place" data-src="../assets/img/work/hp1-bot.jpg"> <!--data-fancybox data-caption="<h5 class='fg-theme'>Test</h5> <p>Caption</p>"> -->
+              <div class="img-place">
                 <img src="../assets/img/work/hp1-bot.jpg" alt="">
                 <div class="img-caption">
                 <h5 class="fg-theme">Article: Half-plane Intersection Algorithms</h5>
@@ -401,7 +417,7 @@
           </div>
           <div class="grid-item personal cp wow zoomIn">
             <a href="https://github.com/oscarburga/cses-solutions" target="_blank">
-              <div class="img-place" data-src="../assets/img/work/cses.jpg"> <!--data-fancybox data-caption="<h5 class='fg-theme'>Test</h5> <p>Caption</p>"> -->
+              <div class="img-place">
                 <img src="../assets/img/work/cses.jpg" alt="">
                 <div class="img-caption">
                   <h5 class="fg-theme">CSES Problemset Solutions</h5>
@@ -412,11 +428,11 @@
           </div>
           <div class="grid-item personal wow zoomIn">
             <a href="https://github.com/oscarburga/cses-solutions" target="_blank">
-              <div class="img-place" data-src="../assets/img/work/dijkstra.jpg"> <!--data-fancybox data-caption="<h5 class='fg-theme'>Test</h5> <p>Caption</p>"> -->
+              <div class="img-place">
                 <img src="../assets/img/work/dijkstra.jpg" alt="">
                 <div class="img-caption">
                   <h5 class="fg-theme">Distributed Dijkstra</h5>
-                  <p>Cool little distributed programming exercise in Go using sockets and TCP.</p>
+                  <p>Cool little distributed programming exercise in Go using TCP sockets.</p>
                 </div>
               </div>
             </a>
