@@ -106,12 +106,20 @@ $(document).ready(function() {
     itemSelector: '.grid-item',
     percentPosition: true
   });
+
+  $grid.imagesLoaded()
+    .progress(function(instance, image) {
+      $grid.isotope('layout');
+      var result = image.isLoaded ? 'loaded' : 'broken';
+      console.log('image is ' + result + ' for ' + image.img.src);
+    })
   
   // filter items on button click
   $('.filterable-button').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });
+
   
   $('.testi-carousel').owlCarousel({
     margin: 0,
